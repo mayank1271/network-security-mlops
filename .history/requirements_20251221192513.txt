@@ -1,0 +1,9 @@
+python-dotenv
+mlflow
+pandas
+numpy
+scikit-learn
+pymango
+certifi
+
+
