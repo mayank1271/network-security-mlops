@@ -1,0 +1,2 @@
+from networksecurity.components.data_ingestio import DataIngestion
+from networksecurity.entity.config_entity import DataIngestionConfig

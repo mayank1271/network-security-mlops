@@ -1,0 +1,1 @@
+from networsecurity.entity.artifact_entity import DataValidationArtifact
