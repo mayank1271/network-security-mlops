@@ -4,5 +4,4 @@ COPY ./app
 
 Run apt update -y && apt install awscli -y
 
-Run apt-get update && pip install -r requirements.txt
-cmd["python",'app.py']
+Run apt-

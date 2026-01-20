@@ -1,0 +1,8 @@
+name: workflow
+
+on:
+  push:
+  branches:
+  - main
+  pathss-ignore:
+  - README.md

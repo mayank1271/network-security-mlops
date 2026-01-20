@@ -15,10 +15,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Lint code
-        run: echo "Linting repository"
-
-      - name: Run unit tests
-        run: echo "Running unit tests"
-
+      - name: Checkout
 
