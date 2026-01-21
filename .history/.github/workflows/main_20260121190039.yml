@@ -87,9 +87,7 @@ jobs:
     
       - name: Run Docker Image to server users
         run: |
-           docker run -d -p 8080:8080 --ipc="host" --name=networksecurity \
-           973605817482.dkr.ecr.us-east-1.amazonaws.com/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-
+          
       - name: Clean previous image and containers
         run: |
           docker system prune -f
