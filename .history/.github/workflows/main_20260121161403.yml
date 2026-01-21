@@ -76,16 +76,6 @@ Continuous-Deploymnet:
 
     - name: pull latest image
       run: |
-        docker pull ${{secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
+        docker pull ${{ }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
-    # - name: stop and remove container if running
-    #   run: |
-    #    docker ps -q --filter "name=my_container" | grep -q . && docker stop mltest && docker rm mltest
-    
-    - name: Run Docker Image to server users
-      run: |
-        docker run -d -p 8080:8080 --ipc="host" --name=networksecurity -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e AWS_REGION=${{ secrets.AWS_REGION }} ${{secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-    - name: Clean previous image and containers
-      run: |
-        docker system prune -f
 
